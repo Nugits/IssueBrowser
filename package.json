@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://github.com/Nugits/IssueBrowser.git",
   "author": "titan19 <vladyslav.ishchuk@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }

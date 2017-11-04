@@ -1,10 +1,7 @@
 {
         "url": "https://api.github.com/repos/facebook/react/issues/11452",
         "repository_url": "https://api.github.com/repos/facebook/react",
-        "labels_url": "https://api.github.com/repos/facebook/react/issues/11452/labels{/name}",
         "comments_url": "https://api.github.com/repos/facebook/react/issues/11452/comments",
-        "events_url": "https://api.github.com/repos/facebook/react/issues/11452/events",
-        "html_url": "https://github.com/facebook/react/pull/11452",
         "id": 271166018,
         "number": 11452,
         "title": "Validate built bundles exists",
