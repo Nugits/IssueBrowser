@@ -22,7 +22,19 @@ function Server() {
             });
     }
 
-    function getIssues(url) { }
+    function doRequestPromise(url) {
+        let promise = new Promise(function (resolve) {
+            doRequest(url, function (result) {
+                resolve(result);
+            });
+        });
+        return promise;
+    }
+
+    function getIssues(owner, repo) {
+        let url = "/repos/" + owner + "/" + repo + "/issues";
+        return doRequestPromise(url);
+    }
 
     //url can be object then skip
     //url can contains host or not
@@ -32,8 +44,22 @@ function Server() {
     //2. "/repos/facebook/react/issues"
     //     /repos/facebook/react/issues
     function getPath(url) {
+        return url;
     }
 
-    return { doRequest: doRequest };
+    function parseLink(url) {
+        let result = {
+            owner: '',
+            repo: '',
+        }
+        return result;
+    }
+
+    return {
+        doRequest: doRequest,
+        doRequessPromise: doRequestPromise,
+        getIssues: getIssues,
+        parseLink: parseLink,
+    };
 }
 module.exports = Server();
