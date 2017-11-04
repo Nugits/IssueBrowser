@@ -1,0 +1,8 @@
+{
+  "name": "IssueBrowser",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Nugits/IssueBrowser.git",
+  "author": "titan19 <vladyslav.ishchuk@gmail.com>",
+  "license": "MIT"
+}
