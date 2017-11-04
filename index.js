@@ -21,6 +21,13 @@ api.get('/api/issues', function (req, res) {
         });
 });
 
+api.get('/api/request', function (req, res) {
+    server.doRequessPromise(req.query.link)
+        .then(function (obj) {
+            res.send(obj);
+        });
+});
+
 api.listen(7778, function () {
     console.log("Started listening api on port", 7778);
 });
