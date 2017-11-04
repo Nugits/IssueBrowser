@@ -67,6 +67,9 @@ function Server() {
             owner: '',
             repo: '',
         }
+        var urlArray = url.split('/');
+        result.owner = urlArray[3];
+        result.repo = urlArray[4];
         return result;
     }
 
