@@ -11,4 +11,3 @@ var server = require("./server/server.js");
 server.doRequest("/repos/facebook/react/issues", function (data) {
     console.info(data);
 });
-
