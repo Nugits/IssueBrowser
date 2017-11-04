@@ -10,8 +10,7 @@ api.use(bodyParser.urlencoded({ extended: true }));
 api.get('/api/issues', function (req, res) {
     let owner = req.query.owner;
     let repo = req.query.repo;
-    if(req.query.link !== undefined)
-    {
+    if (req.query.link !== undefined) {
         let result = server.parseLink(req.query.link);
         owner = result.owner;
         repo = result.repo;
